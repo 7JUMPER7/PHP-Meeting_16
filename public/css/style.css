@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px white, 5px 5px 30px rgba(190, 198, 200, .7);
+    border-radius: 10px;
+    padding: 20px;
+}
+.container .userInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.container .userInfo h3, .container .userInfo p {
+    margin: 0;
+}
+
+.message {
+    font-size: 18px;
+    margin: 0;
+}
+.message.success {
+    color: rgb(1, 179, 1);
+}
+.message.error {
+    color: rgb(235, 28, 28);
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container form label {
+    display: grid;
+    grid-template-columns: 150px 2fr;
+    margin-top: 10px;
+    align-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+.container form input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 30px white, 5px 5px 30px rgba(200, 200, 200, .7);
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.container form input[type='submit'] {
+    background-color: white;
+    margin: 20px;
+    padding: 5px 15px;
+    transition: .3s;
+}
+.container form input[type='submit']:hover {
+    background-color: #145a8c;
+    color: white;
+}
